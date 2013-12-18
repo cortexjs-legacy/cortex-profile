@@ -16,7 +16,7 @@
     "plugin",
     "cortex"
   ],
-  "engines": { 
+  "engines": {
     "node": ">=0.8.0"
   },
   "author": "kael",
@@ -27,5 +27,11 @@
   "devDependencies": {
     "mocha": "~1.13.0",
     "chai": "~1.8.0"
+  },
+  "dependencies": {
+    "multi-profile": "~3.1.1"
+  },
+  "bin": {
+    "cortex-profile": "./bin/cortex-profile.js"
   }
 }
