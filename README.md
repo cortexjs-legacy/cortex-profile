@@ -1,0 +1,3 @@
+# cortex-profile [![NPM version](https://badge.fury.io/js/cortex-profile.png)](http://badge.fury.io/js/cortex-profile) [![Build Status](https://travis-ci.org/cortexjs/cortex-profile.png?branch=master)](https://travis-ci.org/cortexjs/cortex-profile) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-profile.png)](https://gemnasium.com/cortexjs/cortex-profile)
+
+Cortex profile is the profile manager for multiple global configurations.
