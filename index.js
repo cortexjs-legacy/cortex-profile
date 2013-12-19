@@ -2,22 +2,29 @@
 
 // @module profile factory
 
-module.exports = profile;
+module.exports = cortex_profile;
 
 var multi_profile   = require('multi-profile');
 var node_path       = require('path');
 var node_url        = require('url');
 var fs              = require('fs-sync');
-var lang            = require('./util/lang');
-var tmp             = require('./util/tmp');
+var tmp             = require('./lib/tmp');
 
 
-function profile (options) {
+function cortex_profile (options) {
     options = options || {};
+    options.context = options.context || {};
 
-    options.context = {};
+    var key;
 
-    var profile = multi_profile(lang.mix(options, DEFAULT_OPTIONS, false));
+    // make a shallow copy
+    for (key in DEFAULT_OPTIONS) {
+        if ( !(key in options) ) {
+            options[key] = DEFAULT_OPTIONS[key];
+        }
+    }
+
+    var profile = multi_profile(options);
 
     options.context.profile = profile;
 
