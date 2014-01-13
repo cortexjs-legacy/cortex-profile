@@ -169,6 +169,15 @@ var DEFAULT_OPTIONS = {
             }
         },
 
+        watcher_rpc_port : {
+            value       : 9075,
+            type        : {
+                validator : function (v) {
+                    return typeof v === 'string'
+                }
+            }
+        },
+
         server_path     : {
             value       : '/mod',
             type        : {
