@@ -95,7 +95,7 @@ var DEFAULT_OPTIONS = {
         //     type        : TYPES.path
         // },
 
-        cache_root     : {
+        cache_root      : {
             // internal value for cortex, which should not be changed by user
             writable    : false,
             enumerable  : false,
@@ -103,8 +103,14 @@ var DEFAULT_OPTIONS = {
             type        : TYPES.cortex_path
         },
 
+        // When server mode is off, cortex-build will build packages to the current repo
+        server_mode     : {
+            value       : true,
+            type        : 'boolean'
+        },
+
         built_root      : {
-            // internal value for cortex
+            // internal value for cortex, which should not be changed by user
             writable    : false,
             value       : 'built_modules',
             type        : TYPES.cortex_path
