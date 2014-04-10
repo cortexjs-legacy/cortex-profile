@@ -76,6 +76,20 @@ var TYPES = {
 
       return v.href;
     }
+  },
+
+  boolean: {
+    setter: function (v) {
+      if (v === 'false') {
+        return false;
+      }
+
+      if (v === 'true') {
+        return true;
+      }
+
+      return !!v;
+    }
   }
 };
 
@@ -106,7 +120,7 @@ var DEFAULT_OPTIONS = {
     // When server mode is off, cortex-build will build packages to the current repo
     server_mode: {
       value: true,
-      type: 'boolean'
+      type: TYPES.boolean
     },
 
     built_root: {
@@ -222,7 +236,7 @@ var DEFAULT_OPTIONS = {
     // set 'colors' to `false` on CI
     colors: {
       value: true,
-      type: 'boolean'
+      type: TYPES.boolean
     },
 
     // http port for cortex server
