@@ -28,7 +28,7 @@ function cortex_profile(options) {
 
   options.context.profile = profile;
 
-  profile.saveConfig = function() {
+  profile.encrypt = function() {
     if (profile.hasConfig('password') || profile.hasConfig('username')) {
       profile.set('_auth');
       var data = profile.getWritable();
