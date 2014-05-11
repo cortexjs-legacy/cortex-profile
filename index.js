@@ -125,6 +125,15 @@ var DEFAULT_OPTIONS = {
       type: TYPES.boolean
     },
 
+    // When interactive is on, cortex sometimes will ask user 
+    // if one or more important option is not specified.
+    // If off, cortex will use the default value directly, 
+    // which is usefull for CI or restful service.
+    interactive: {
+      value: true,
+      type: TYPES.boolean
+    },
+
     built_root: {
       // internal value for cortex, which should not be changed by user
       writable: false,
