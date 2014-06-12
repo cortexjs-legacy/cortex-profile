@@ -28,16 +28,14 @@ function cortex_profile(options) {
 
   options.context.profile = profile;
 
-  profile.encrypt = function() {
-    if (profile.hasConfig('password') || profile.hasConfig('username')) {
+  profile.encrypt = function(noCheck) {
+    if (noCheck || profile.hasConfig('password') || profile.hasConfig('username')) {
       profile.set('_auth');
       var data = profile.getWritable();
 
       // never save username and password
       delete data.password;
       delete data.username;
-
-      profile.save(data);
     }
   };
 
