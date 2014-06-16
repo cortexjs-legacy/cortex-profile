@@ -9,6 +9,7 @@ var node_path = require('path');
 var node_url = require('url');
 var fs = require('fs-sync');
 var tmp = require('./lib/tmp');
+var wrapper = require('./lib/error-wrapper');
 
 
 function cortex_profile(options) {
@@ -40,6 +41,9 @@ function cortex_profile(options) {
     }
   };
 
+  wrapper.patch(profile, 'init');
+  wrapper.patch(profile, 'save');
+  wrapper.patch(profile, 'reload');
   return profile;
 }
 

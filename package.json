@@ -1,6 +1,6 @@
 {
   "name": "cortex-profile",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Cortex profile manager.",
   "main": "index.js",
   "scripts": {
@@ -29,8 +29,10 @@
     "chai": "~1.8.0"
   },
   "dependencies": {
-    "multi-profile": "~3.3.0",
-    "fs-sync": "~0.2.4"
+    "multi-profile": "~4.0.0",
+    "fs-sync": "~0.2.4",
+    "typo": "~0.2.11",
+    "deep-equal": "~0.2.1"
   },
   "bin": {
     "cortex-profile": "./bin/cortex-profile.js"
