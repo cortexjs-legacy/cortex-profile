@@ -184,7 +184,7 @@ var DEFAULT_OPTIONS = {
     },
 
     registry: {
-      value: 'http://registry.cortexjs.org',
+      value: 'http://r.ctx.io',
       type: TYPES.url
     },
 
