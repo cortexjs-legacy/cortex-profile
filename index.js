@@ -122,12 +122,6 @@ var DEFAULT_OPTIONS = {
       type: TYPES.cortex_path
     },
 
-    // When server mode is off, cortex-build will build packages to the current repo
-    server_mode: {
-      value: true,
-      type: TYPES.boolean
-    },
-
     // When interactive is on, cortex sometimes will ask user 
     // if one or more important option is not specified.
     // If off, cortex will use the default value directly, 
