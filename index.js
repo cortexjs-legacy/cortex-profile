@@ -66,7 +66,9 @@ var TYPES = {
         fs.mkdir(v);
       }
 
-      return v;
+      // Standardize:
+      // '/abc/' -> '/abc'
+      return node_path.resolve(v);
     }
   },
 
