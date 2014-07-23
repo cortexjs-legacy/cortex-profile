@@ -1,6 +1,6 @@
 {
   "name": "cortex-profile",
-  "version": "2.1.5",
+  "version": "3.0.0",
   "description": "Cortex profile manager.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "cortex"
   ],
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "author": "kael",
   "license": "MIT",
@@ -29,10 +29,10 @@
     "chai": "~1.8.0"
   },
   "dependencies": {
-    "multi-profile": "~4.0.0",
-    "fs-sync": "~0.2.4",
-    "typo": "~0.2.11",
-    "deep-equal": "~0.2.1"
+    "multi-profile": "^5.1.0",
+    "fs-sync": "^0.2.4",
+    "typo": "^0.2.11",
+    "deep-equal": "^0.2.1"
   },
   "bin": {
     "cortex-profile": "./bin/cortex-profile.js"
