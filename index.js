@@ -119,7 +119,11 @@ var DEFAULT_OPTIONS = {
     prerelease: {
       // Indicates which pre-release environment is.
       enumerable: false,
-      type: 'string'
+      type: {
+        getter: function (v) {
+          return v || null;
+        }
+      }
     },
 
     cache_root: {
