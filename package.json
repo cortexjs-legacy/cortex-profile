@@ -1,6 +1,6 @@
 {
   "name": "cortex-profile",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Cortex profile manager.",
   "main": "index.js",
   "scripts": {

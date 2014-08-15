@@ -121,7 +121,7 @@ var DEFAULT_OPTIONS = {
       enumerable: false,
       type: {
         getter: function (v) {
-          return v || null;
+          return v || false;
         }
       }
     },
