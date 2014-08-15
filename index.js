@@ -116,6 +116,12 @@ var DEFAULT_OPTIONS = {
     //     type        : TYPES.path
     // },
 
+    prerelease: {
+      // Indicates which pre-release environment is.
+      enumerable: false,
+      type: 'string'
+    },
+
     cache_root: {
       // internal value for cortex, which should not be changed by user
       writable: false,
