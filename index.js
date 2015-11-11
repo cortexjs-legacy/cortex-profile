@@ -134,6 +134,13 @@ var DEFAULT_OPTIONS = {
       type: TYPES.cortex_path
     },
 
+    cert_root: {
+      writable: false,
+      enumerable: false,
+      value: 'certs',
+      type: TYPES.cortex_path
+    },
+
     // When interactive is on, cortex sometimes will ask user 
     // if one or more important option is not specified.
     // If off, cortex will use the default value directly, 
